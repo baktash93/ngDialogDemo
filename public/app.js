@@ -18,6 +18,8 @@ angular.module('app', ['ngDialog'])
             controller: 'dialog1Controller',
             templateUrl: '/public/dialogTemplates/dialog2content.html',
             locals: {}
+        }).then(function(submittedData){
+            console.log("Your name: " + submittedData.name + " | Your occupation: " + submittedData.occupation);
         });
     };
 
@@ -64,6 +66,11 @@ angular.module('app', ['ngDialog'])
 
 angular.module('app')
 .controller('dialog1Controller', function($scope, ngDialog){
+    var user = $scope.user = {};
+    $scope.submitDetails = function(){
+        ngDialog.hide(user);
+    };
+    
     $scope.close = function(){
         ngDialog.cancel();
     };
