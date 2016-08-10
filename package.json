@@ -1,0 +1,21 @@
+{
+  "name": "ng-dialog-demo",
+  "version": "1.0.0",
+  "description": "Demo AngularJS app with basic implementation of ngDialog module.",
+  "main": "index.js",
+  "dependencies": {
+    "express": "^4.13.4",
+    "jade": "^1.11.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "ng-dialog-demo",
+    "ngDialogDemo",
+    "ngdialogdemo"
+  ],
+  "author": "Ahmad Baktash Hayeri <baktash93@gmail.com> (https://github.com/baktash93)",
+  "license": "ISC"
+}

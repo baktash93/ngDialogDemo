@@ -1,0 +1,17 @@
+<div class="ng-dialog-content">
+    <h3>Modal Dialog</h3>
+    <div>
+        <h4 class="column">Enter your details</h4>
+        <form>
+          <div class="column">
+            Name: <input type="text" name="name" value="Name" ng-model="user.name">
+          </div>
+          <div class="column">
+            Occupation: <input type="text" name="occupation" value="Occupation" ng-model="user.occupation">
+          </div>
+          <div class="column">
+            <button type="submit" name="submit" ng-click="submitDetails()">Submit</button>
+            <sub>Check your console for your submitted details.</sub>
+          </div>
+        </form>
+    </div>
